@@ -9,6 +9,23 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
     "jest": "^27.0.6"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
   }
 }
